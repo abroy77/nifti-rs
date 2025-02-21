@@ -66,10 +66,6 @@
 #![allow(clippy::unit_arg)]
 #![recursion_limit = "128"]
 
-#[cfg(all(test, feature = "nalgebra_affine"))]
-#[macro_use]
-extern crate approx;
-
 #[cfg(feature = "nalgebra_affine")]
 pub mod affine;
 pub mod error;

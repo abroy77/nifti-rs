@@ -59,6 +59,7 @@ pub const MAGIC_CODE_NIP1: &[u8; 4] = b"n+1\0";
 #[derive(Debug, Clone, PartialEq)]
 pub struct NiftiHeader {
     /// Header size, must be 348
+    /// In nifti-2 this can be different. keep in mind
     pub sizeof_hdr: i32,
     /// Unused in NIFTI-1
     pub data_type: [u8; 10],
